@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Animação de entrada para título principal e subtítulo */
+@keyframes aparecerDeCima {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cabecalho h1,
+.cabecalho h3 {
+    animation: aparecerDeCima 1s ease-out forwards;
+    opacity: 0;
+}
+
+.cabecalho h3 {
+    color: gray;
+    animation-delay: 0.5s;
+}
+
+/* MENU */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-nav .nav-link {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.navbar-nav .nav-item:nth-child(1) .nav-link { animation-delay: 0.3s; }
+.navbar-nav .nav-item:nth-child(2) .nav-link { animation-delay: 0.4s; }
+.navbar-nav .nav-item:nth-child(3) .nav-link { animation-delay: 0.5s; }
+.navbar-nav .nav-item:nth-child(4) .nav-link { animation-delay: 0.6s; }
+
+/* TEXTO */
+.alinha-justificado {
+    text-align: justify;
+}
+
+/* IMAGENS com animação */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.img-card,
+.img-agro {
+    animation: zoomIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+.img-card:nth-of-type(1) { animation-delay: 0.5s; }
+.img-card:nth-of-type(2) { animation-delay: 0.6s; }
+.img-card:nth-of-type(3) { animation-delay: 0.7s; }
+
+.img-card-esquerda {
+    max-width: 280px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+}
+
+/* IMAGENS GERAIS */
+.img-agro {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.br-3 {
+    border-radius: 15px;
+}
+
+.img-card {
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.img-card:hover {
+    transform: scale(1.05);
+}
+
+.img-slide {
+    max-height: 400px;
+    width: 100%;
+}
+
+/* RODAPÉ */
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    animation: fadeInBottom 1.2s ease-out forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}

@@ -1,0 +1,119 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO com brilho */
+.cabecalho {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    animation: shine 2s ease-in-out forwards;
+    background: linear-gradient(90deg, black, #1a1a1a, black);
+    background-size: 200% auto;
+}
+
+@keyframes shine {
+    0% {
+        background-position: -200px center;
+    }
+    100% {
+        background-position: 200px center;
+    }
+}
+
+.cabecalho h3 {
+    color: gray;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Texto justificado */
+.alinha-justificado {
+    text-align: justify;
+}
+
+/* CARD IMAGENS animação */
+@keyframes zoomInSlide {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateX(0);
+    }
+}
+
+.img-card {
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: zoomInSlide 1s ease-out forwards;
+    opacity: 0;
+}
+
+.img-card:hover {
+    transform: scale(1.05);
+}
+
+/* CARD TEXTO animação */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.row.align-items-center .col-md-9 {
+    animation: fadeUp 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.3s;
+}
+
+/* Carrossel (se tiver no futuro) */
+.img-slide {
+    max-height: 400px;
+    width: 100%;
+}
+
+/* RODAPÉ com blur in */
+@keyframes blurIn {
+    from {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    animation: blurIn 1.2s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.8s;
+}
+
+/* FadeIn genérico */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
