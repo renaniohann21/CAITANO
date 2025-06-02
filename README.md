@@ -13,6 +13,8 @@ PRODUÇÃO:
    A energia renovável no campo, como solar, biomassa e eólica, torna a agricultura mais autônoma, produtiva e sustentável, reduzindo custos e impactos ambientais. A água é essencial para a produção agropecuária, e práticas como irrigação eficiente, reúso e captação garantem produtividade contínua e sustentabilidade. A cadeia de alimentos do campo à cidade usa tecnologia e planejamento para entregar produtos frescos e de qualidade nas mesas.
 
 
+"Gostaria de agradecer a todos que contribuíram para a criação deste conteúdo. A abordagem de temas tão relevantes, como sustentabilidade e inovação no agro, é essencial para nosso aprendizado e para o avanço de práticas mais eficientes e responsáveis. Agradeço pela oportunidade de compartilhar essas informações, que ajudam a construir um futuro mais sustentável e próspero para o campo."
+
 
 
 
